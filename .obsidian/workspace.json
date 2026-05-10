@@ -37,12 +37,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Anthropic_claude_course/building with claude API/overall notes.md",
+                "file": "Anthropic_claude_course/modal context protocol/MCP architecture.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "overall notes"
+              "title": "MCP architecture"
             }
           }
         ],
@@ -221,8 +221,10 @@
   },
   "active": "207b287405d52c89",
   "lastOpenFiles": [
-    "Untitled 1.md",
     "Anthropic_claude_course/building with claude API/overall notes.md",
+    "Anthropic_claude_course/modal context protocol/MCP architecture.md",
+    "Anthropic_claude_course/modal context protocol",
+    "Untitled 1.md",
     "Untitled.md",
     "Anthropic_claude_course/building with claude API/Accessing API.md",
     "Anthropic_claude_course/claud code in action/hooks and SDK.md",
