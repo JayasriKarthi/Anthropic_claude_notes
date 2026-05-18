@@ -37,12 +37,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Anthropic_claude_course/modal context protocol/MCP architecture.md",
+                "file": "Untitled/VPC - VIRTUAL PRIVATE CLOUD AWS NOTES.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MCP architecture"
+              "title": "VPC - VIRTUAL PRIVATE CLOUD AWS NOTES"
             }
           }
         ],
@@ -221,22 +221,25 @@
   },
   "active": "207b287405d52c89",
   "lastOpenFiles": [
+    "Untitled/Untitled 1.md",
+    "Untitled/VPC - VIRTUAL PRIVATE CLOUD AWS NOTES.md",
+    "Untitled.md",
+    "Anthropic_claude_course/claud code in action/MCp server.md",
+    "2026-05-18.md",
+    "Untitled",
+    "Anthropic_claude_course/claud code in action/hooks and SDK.md",
+    "Anthropic_claude_course/claud code in action/custom commands.md",
+    "Anthropic_claude_course/claud code in action/adding context.md",
     "Anthropic_claude_course/building with claude API/overall notes.md",
+    "Anthropic_claude_course/building with claude API/Accessing API.md",
     "Anthropic_claude_course/modal context protocol/MCP architecture.md",
     "Anthropic_claude_course/modal context protocol",
     "Untitled 1.md",
-    "Untitled.md",
-    "Anthropic_claude_course/building with claude API/Accessing API.md",
-    "Anthropic_claude_course/claud code in action/hooks and SDK.md",
     "Anthropic_claude_course/building with claude API",
-    "Anthropic_claude_course/claud code in action/MCp server.md",
-    "Anthropic_claude_course/claud code in action/custom commands.md",
     "Anthropic_claude_course/claud code in action/more commands.md",
-    "Anthropic_claude_course/claud code in action/adding context.md",
     "adding context.md",
     "Anthropic_claude_course/Claude code in action.md",
     "Anthropic_claude_course/claud code in action",
-    "Untitled/Untitled.md",
     "Anthropic_claude_course",
     "Welcome.md",
     "Untitled 2.md",
