@@ -95,3 +95,52 @@
 
 ---
 
+### 🏗️ What AWS Auto-Creates When You Create a VPC
+
+ResourceCreated Automatically?Default Behavior**Route Table**✅ YesOnly has a local route (no internet access)**Network ACL**✅ YesAllows **ALL** inbound & outbound traffic**Security Group**✅ YesAllows all **outbound** traffic, allows **inbound only from same security groupDHCP Option Set**✅ YesProvides DNS and IP config to resources
+
+
+PROJECT -2 
+
+
+INBOUND (User → Your EC2 Instance):
+1. 🌐 User sends request from their browser
+2. 🚪 Internet Gateway lets traffic into the VPC
+3. 🚏 Route Table directs traffic to the right subnet
+4. 📋 Network ACL checks subnet-level inbound rules → ALLOWED
+5. 🥅 Request enters the Public Subnet
+6. 👮 Security Group checks resource-level inbound rules → ALLOWED
+7. 💻 EC2 Instance processes the request
+
+OUTBOUND (Response back to User):
+8. 👮 Security Group auto-allows response (stateful!)
+9. 📋 Network ACL checks outbound rules separately (stateless!)
+10. 🚏 Route Table directs response to internet gateway
+11. 🚪 Internet Gateway sends response to the internet
+12. 🌐 User sees the website!
+
+
+### Public EC2 Instance
+
+A public instance is an EC2 instance launched in a public subnet. In your project, this is your **NextWork Public Server**.
+
+- It sits in a subnet that has a route to an internet gateway, so it can communicate with the internet.
+    
+- It gets a **Public IPv4 address** — a globally unique address that lets it be reachable from the internet.
+    
+- You can connect to it directly using EC2 Instance Connect.
+    
+- **Use case:** Web servers, application servers — anything that needs to talk to the outside world.
+    
+
+### 🔒 Private EC2 Instance
+
+A private instance is an EC2 instance launched in a private subnet. In your project, this is your **NextWork Private Server**.
+
+- It sits in a subnet with **no route to an internet gateway**, so it **cannot** communicate directly with the internet.
+    
+- It only has a **Private IPv4 address** — no public IP, so it's invisible to the outside world.
+    
+- You **can't** connect to it directly from the internet. It can only communicate with other resources **inside your VPC**.
+    
+- **Use case:** Databases, backend servers — anything that holds sensitive data and shouldn't be exposed.
